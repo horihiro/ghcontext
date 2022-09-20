@@ -1,0 +1,11 @@
+on:
+  - pull_request:
+    types: [opened, reopened, synchronize, closed]
+  - push
+
+jobs:
+  dump-event:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+      echo ${ GITHUB_EVENT_PATH }
