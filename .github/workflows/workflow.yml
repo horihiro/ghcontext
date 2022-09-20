@@ -1,7 +1,7 @@
 on:
-  - pull_request:
+  pull_request:
     types: [opened, reopened, synchronize, closed]
-  - push
+  push:
 
 jobs:
   dump-event:
